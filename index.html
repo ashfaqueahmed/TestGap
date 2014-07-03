@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+h1{color:#003333}
+label{color:#FFFFFF}
+fieldset{background-color:#006699}
+legend{color:#fff ; background-color:#006699}
+</style>
+
+<script type="text/javascript">
+function addbutton(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+
+c.innerHTML = a+b;
+var aa = parseInt(a);
+var bb = parseInt(b);
+var z = aa+bb;
+document.getElementById("c").value=z;
+alert("Result : "+z);
+}
+</script>
+
+</head>
+
+<body style='background-color:#ddd;'>
+
+<h1> Using CSS First time..</h1>
+
+<form>
+<fieldset>
+<legend> Personal Info</legend>
+<div style='width :100%; float:left'>
+<div style='width :20%; float:left'>
+<label> Name</label>
+</div>
+<div style='width :80%; float:right'>
+<input type = "text" />
+</div>
+</div>
+
+<div style='width :100%; float:left'>
+<div style='width :20%; float:left'>
+<label> Address</label>
+</div>
+<div style='width :80%; float:right'>
+<input type = "text" />
+</div>
+</div>
+
+<div style='width :100%; float:left'>
+<div style='width :20%; float:left'>
+<label> Phone</label>
+</div>
+<div style='width :80%; float:right'>
+<input type = "text" />
+</div>
+</div>
+
+</fieldset>
+<h2> Some mathematical stuff</h2>
+<fieldset>
+<legend> Addition </legend>
+
+<div style='width :100%; float:left'>
+<div style='width :20%; float:left'>
+<label> Enter first number</label>
+</div>
+<div style='width :80%; float:right'>
+<input type = "text"  id="a" />
+</div>
+</div>
+<div style='width :100%; float:left'>
+<div style='width :20%; float:left'>
+<label> Enter second number</label>
+</div>
+<div style='width :80%; float:right'>
+<input type = "text"  id="b" />
+</div>
+</div>
+<div style='width :100%; float:left'>
+<div style='width :20%; float:left'>
+<input type ="button" value="Add" onclick="addbutton();" />
+</div>
+<div style='width :80%; float:right'>
+<input type = "text"  id="c" />
+</div>
+</div>
+</fieldset>
+</form>
+
+</body>
+</html>
